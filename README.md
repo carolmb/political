@@ -5,9 +5,13 @@
 Run scripts following the order: 
 
 > python json_to_json.py
+
 > python deputies_parser.py
+
 > python backbone.py
+
 > python communities.py
+
 > python distance.py
 
 To generate plots of metrics (degree, modularity, diversity):
