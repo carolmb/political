@@ -49,7 +49,7 @@ def plot(xs,ys,x_name,y_name,filename,dim=(12,2)):
     # plt.legend(loc='upper right')
     plt.xlabel(x_name)
     plt.ylabel(y_name)                
-    plt.savefig(header+y_name+'.pdf',format='pdf',bbox_inches="tight")
+    plt.savefig(header+filename+'.pdf',format='pdf',bbox_inches="tight")
     plt.close()
 
 def degree(dates,nets):
