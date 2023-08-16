@@ -82,9 +82,11 @@ def plot_metric(to_plot,interval_colors,color,output_fname,metric_name,is_custom
     delta = 12
     if is_custom_labels:
         delta = 1
-    labels = [str(int(x)) if i%delta == 0 else '' for i,x in enumerate(xs2)]
-    
+
     xpos = np.arange(min(xs2), max(xs2)+1/delta, 1/delta)
+    labels = [str(int(x)) if i%delta == 0 else '' for i,x in enumerate(xpos)]
+    
+    
     plt.xticks(xpos,labels=labels,rotation=35)   
     
     if is_bg:
